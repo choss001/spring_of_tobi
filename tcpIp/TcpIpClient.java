@@ -13,7 +13,7 @@ public class TcpIpClient {
             String serverIp = "127.0.0.1";
             System.out.println("서버에 연결중입니다. 서버IP :" + serverIp);
 
-            Socket socket = new Socket(serverIp, 4363);
+            Socket socket = new Socket(serverIp, 7777);
             InputStream in = socket.getInputStream();
             DataInputStream dis = new DataInputStream(in);
 
