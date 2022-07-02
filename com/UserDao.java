@@ -1,11 +1,15 @@
+package com;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import org.h2.Driver;
 
 public class UserDao {
 
     public void add(User user) throws ClassNotFoundException, SQLException {
+
         Class.forName("org.h2.Driver");
         Connection c = DriverManager.getConnection(
                 "jdbc:h2:tcp://localhost/~/test", "sa", "");
