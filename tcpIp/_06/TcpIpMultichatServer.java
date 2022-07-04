@@ -27,7 +27,7 @@ public class TcpIpMultichatServer {
       while (true) {
         socket = serverSocket.accept();
         System.out.println("["+socket.getPort()+"]"+"에서 접속하였습니다.");
-        ServerReceiver thread= new ServerReceiver();
+//        ServerReceiver thread= new ServerReceiver();
       }
     } catch (IOException e) {
       e.printStackTrace();
